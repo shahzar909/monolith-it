@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Custom Software Development",
+    "description": "Tailored software solutions built to align with your business goals, workflows, and scalability requirements.",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format"
+  },
+  {
+    "id": 2,
+    "title": "Web Application Development",
+    "description": "High-performance, secure, and scalable web applications using modern frameworks and cloud-native architecture.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format"
+  },
+  {
+    "id": 3,
+    "title": "Mobile App Development",
+    "description": "Intuitive and powerful mobile applications for iOS and Android, designed for performance and user experience.",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200&q=80&auto=format"
+  },
+  {
+    "id": 4,
+    "title": "Cloud & DevOps Solutions",
+    "description": "Deploy, manage, and scale applications efficiently using cloud infrastructure and DevOps best practices.",
+    "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80&auto=format"
+  },
+  {
+    "id": 5,
+    "title": "UI/UX Design & Product Strategy",
+    "description": "User-centric design and product strategy focused on usability, engagement, and conversion optimization.",
+    "image": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1200&q=80&auto=format"
+  },
+  {
+    "id": 6,
+    "title": "SaaS Product Engineering",
+    "description": "End-to-end SaaS development including architecture, subscriptions, analytics, security, and scalability.",
+    "image": "https://images.unsplash.com/photo-1556155092-8707de31f9c4?w=1200&q=80&auto=format"
+  },
+  {
+    "id": 7,
+    "title": "AI & Machine Learning Solutions",
+    "description": "Intelligent systems that automate processes, analyze data, and enable smarter business decisions.",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80&auto=format"
+  },
+  {
+    "id": 8,
+    "title": "API Development & System Integration",
+    "description": "Robust API development and seamless integration with third-party platforms and enterprise systems.",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&q=80&auto=format"
+  }
+]

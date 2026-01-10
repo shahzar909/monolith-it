@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Michael Chen",
+      "position": "Chief Executive Officer",
+      "bio": "Visionary leader with 20+ years in technology innovation and business transformation."
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "position": "Chief Technology Officer",
+      "bio": "Technology strategist specializing in cloud architecture and enterprise solutions."
+    },
+    {
+      "id": 3,
+      "name": "David Rodriguez",
+      "position": "VP of Engineering",
+      "bio": "Engineering expert driving technical excellence and agile methodologies."
+    },
+    {
+      "id": 4,
+      "name": "Emily Williams",
+      "position": "Head of Design",
+      "bio": "Creative director focused on user experience and innovative interface design."
+    }
+  ]

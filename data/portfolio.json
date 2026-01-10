@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "title": "Financial Services Platform",
+    "category": "FinTech",
+    "description": "Developed a comprehensive digital banking platform with real-time transactions, fraud detection, and mobile-first UX.",
+    "image": "/images/portfolio/project-1.png"
+  },
+  {
+    "id": 2,
+    "title": "Healthcare Management System",
+    "category": "Healthcare",
+    "description": "Built an integrated hospital management system with EHR, appointment scheduling, and telemedicine features.",
+    "image": "/images/portfolio/project-2.png"
+  },
+  {
+    "id": 3,
+    "title": "Retail Marketplace Platform",
+    "category": "Retail",
+    "description": "Created a scalable multi-vendor marketplace handling 100K+ daily transactions with analytics and AI recommendations.",
+    "image": "/images/portfolio/project-3.png"
+  },
+  {
+    "id": 4,
+    "title": "Logistics & Supply Chain System",
+    "category": "Logistics",
+    "description": "Implemented an automated logistics platform with real-time tracking and route optimization.",
+    "image": "/images/portfolio/project-4.png"
+  },
+  {
+    "id": 5,
+    "title": "AI Analytics Dashboard",
+    "category": "AI / ML",
+    "description": "Designed an AI-powered analytics dashboard for business intelligence and predictive insights.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format"
+  },
+  {
+    "id": 999,
+    "title": "AI Agent Platform",
+    "category": "Artificial Intelligence",
+    "description": "An autonomous AI agent system capable of reasoning, tool usage, and multi-step task execution for real-world workflows.",
+    "image": "/images/portfolio/project-6.png"
+  }
+  
+]
