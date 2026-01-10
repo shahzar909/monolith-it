@@ -1,14 +1,14 @@
 import { NextResponse } from "next/server";
-import connectDB from "../../../lib/mongodb";
-import Lead from "../../../models/Lead";
+import connectDB from "@/lib/mongodb";
+import Lead from "@/models/Lead";
 
-export async function POST(request: Request) {
+export async function POST(req: Request) {
   try {
-    const { name, email, phone, countryCode } = await request.json();
+    const { name, email, phone } = await req.json();
 
-    if (!name || !email || !phone || !countryCode) {
+    if (!name || !email) {
       return NextResponse.json(
-        { error: "Missing required fields" },
+        { error: "Name and email are required" },
         { status: 400 }
       );
     }
@@ -19,12 +19,12 @@ export async function POST(request: Request) {
       name,
       email,
       phone,
-      countryCode,
     });
 
-    return NextResponse.json({ success: true }, { status: 201 });
+    return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("API ERROR:", error);
+    console.error("GET STARTED ERROR:", error);
+
     return NextResponse.json(
       { error: "Internal Server Error" },
       { status: 500 }
