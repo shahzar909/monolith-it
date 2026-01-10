@@ -37,16 +37,17 @@ export default function GetStartedModal({ onClose }) {
       const res = await fetch("/api/get-started", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+
+        // ✅ FIXED PAYLOAD
         body: JSON.stringify({
           name,
           email,
-          phone,
-          countryCode,
+          phone: `${countryCode}${phone}`, // ← important fix
         }),
       });
 
       if (!res.ok) {
-        throw new Error("Failed to submit");
+        throw new Error("Submission failed");
       }
 
       setSubmitted(true);
@@ -84,27 +85,24 @@ export default function GetStartedModal({ onClose }) {
             </p>
 
             <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-              {/* Name */}
               <input
                 type="text"
                 placeholder="Full Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm outline-none focus:border-white/30"
                 required
+                className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm outline-none focus:border-white/30"
               />
 
-              {/* Email */}
               <input
                 type="email"
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm outline-none focus:border-white/30"
                 required
+                className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm outline-none focus:border-white/30"
               />
 
-              {/* Phone */}
               <div className="flex gap-2">
                 <select
                   value={countryCode}
@@ -127,8 +125,8 @@ export default function GetStartedModal({ onClose }) {
                     setError("");
                   }}
                   maxLength={10}
-                  className="flex-1 rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm outline-none focus:border-white/30"
                   required
+                  className="flex-1 rounded-xl bg-black/40 border border-white/10 px-4 py-3 text-sm outline-none focus:border-white/30"
                 />
               </div>
 

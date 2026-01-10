@@ -4,7 +4,11 @@ import Lead from "@/models/Lead";
 
 export async function POST(req: Request) {
   try {
-    const { name, email, phone } = await req.json();
+    const body = await req.json();
+
+    const name = body.name?.trim();
+    const email = body.email?.trim();
+    const phone = body.phone?.trim() || "";
 
     if (!name || !email) {
       return NextResponse.json(
@@ -15,18 +19,18 @@ export async function POST(req: Request) {
 
     await connectDB();
 
-    await Lead.create({
+    const lead = await Lead.create({
       name,
       email,
       phone,
     });
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, lead });
   } catch (error) {
-    console.error("GET STARTED ERROR:", error);
+    console.error("GET STARTED API ERROR:", error);
 
     return NextResponse.json(
-      { error: "Internal Server Error" },
+      { error: String(error) },
       { status: 500 }
     );
   }
