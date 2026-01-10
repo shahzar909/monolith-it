@@ -1,16 +1,14 @@
 import { NextResponse } from "next/server";
 
-export async function POST() {
+export async function GET() {
   const response = NextResponse.redirect(
-    new URL("/admin/login", process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000")
+    new URL("/admin/login", process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000")
   );
 
   response.cookies.set("admin_token", "", {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
+    expires: new Date(0),
     path: "/",
-    maxAge: 0,
   });
 
   return response;

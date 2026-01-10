@@ -36,14 +36,15 @@ export default async function AdminDashboardPage() {
   </div>
 
   <form action="/api/admin/logout" method="POST">
-    <button
-      type="submit"
-      className="rounded-full border border-white/20 px-5 py-2
-                 text-sm text-white hover:bg-white hover:text-black
-                 transition"
-    >
-      Logout
-    </button>
+  <button
+  onClick={() => {
+    window.location.href = "/api/admin/logout";
+  }}
+  className="text-sm text-red-400 hover:text-red-300"
+>
+  Logout
+</button>
+
   </form>
 </div>
 
