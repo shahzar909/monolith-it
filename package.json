@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^12.25.0",
     "geist": "^1.5.1",
     "jsonwebtoken": "^9.0.3",
     "lucide-react": "^0.263.1",
