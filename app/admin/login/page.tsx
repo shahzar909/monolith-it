@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 
 export default function AdminLoginPage() {
@@ -11,7 +11,7 @@ export default function AdminLoginPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
     setError("");
@@ -29,9 +29,8 @@ export default function AdminLoginPage() {
         return;
       }
 
-      // success → go to dashboard
       router.push("/admin/dashboard");
-    } catch (err) {
+    } catch {
       setError("Something went wrong");
       setLoading(false);
     }
@@ -45,7 +44,6 @@ export default function AdminLoginPage() {
       >
         <h1 className="text-2xl text-white mb-6">Admin Login</h1>
 
-        {/* EMAIL */}
         <input
           type="email"
           placeholder="Admin Email"
@@ -58,7 +56,6 @@ export default function AdminLoginPage() {
                      focus:border-white/30"
         />
 
-        {/* PASSWORD */}
         <input
           type="password"
           placeholder="Password"
@@ -71,14 +68,12 @@ export default function AdminLoginPage() {
                      focus:border-white/30"
         />
 
-        {/* ERROR */}
         {error && (
           <p className="text-red-400 text-sm mb-4">
             {error}
           </p>
         )}
 
-        {/* SUBMIT */}
         <button
           type="submit"
           disabled={loading}

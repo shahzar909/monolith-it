@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, useMemo } from "react";
 import PortfolioCard from "./PortfolioCard";
 
-const AUTO_PLAY_INTERVAL = 2000;
+const AUTO_PLAY_INTERVAL = 3000;
 const CARD_SPACING = 260;
 
 export default function ProjectsCarousel({ projects }: { projects: any[] }) {

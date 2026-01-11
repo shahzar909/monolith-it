@@ -11,21 +11,14 @@ export default function Footer() {
               <span className="text-primary-400">Monolith</span>.IT
             </Link>
             <p className="text-dark-300 mb-6">
-              Leading IT company delivering innovative software solutions and technology services to businesses worldwide.
+              Reliable technology, built for growth
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
-                <Twitter size={18} />
-              </a>
+             
               <a href="#" className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
-                <Instagram size={18} />
-              </a>
+              
             </div>
           </div>
 
@@ -60,6 +53,10 @@ export default function Footer() {
               <li className="flex items-center">
                 <Phone className="text-primary-400 mr-3 flex-shrink-0" size={20} />
                 <span className="text-dark-300">+91 7301190333</span>
+              </li>
+              <li className="flex items-center">
+                <Phone className="text-primary-400 mr-3 flex-shrink-0" size={20} />
+                <span className="text-dark-300">+91 8700256931</span>
               </li>
               <li className="flex items-center">
                 <Mail className="text-primary-400 mr-3 flex-shrink-0" size={20} />

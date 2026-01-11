@@ -14,8 +14,7 @@ export default function CTASection() {
 
         {/* Main CTA heading */}
         <h2 className="text-3xl md:text-4xl font-light text-white max-w-3xl mx-auto leading-snug">
-          Let us discuss how our innovative IT solutions can help you achieve your
-          business goals and stay ahead of the competition.
+        Technology that adapts to you
         </h2>
 
         {/* Buttons */}

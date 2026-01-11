@@ -57,29 +57,23 @@ export default function AboutPage() {
           </h2>
 
           <p className="text-lg leading-relaxed mb-6 text-gray-700">
-            Monolith is a technology company focused on building scalable,
-            secure, and performance-driven digital products. We partner with
-            businesses to design, engineer, and evolve software systems that
-            stand the test of time.
+            Monolith is a technology firm that specializes in the development of scalable, 
+            secured and performance-based digital products. 
+            We collaborate with companies to create, 
+            develop and upgrade software systems that have the test of time.
+      
+            We are based on clarity, precision, and long-term thinking.
+             We feel that great technology encompasses more than innovation in making decisions that are calculated in a manner 
+             that helps in growth, reliability and maintainability.
           </p>
 
           <p className="text-lg leading-relaxed mb-6 text-gray-700">
-            Our approach is rooted in clarity, precision, and long-term thinking.
-            We believe that great technology is not just about innovation, but
-            about making deliberate decisions that support growth, reliability,
-            and maintainability.
-          </p>
+          With the latest web platforms and mobile solutions, or cloud-native infrastructure and smart systems, we assist companies to turn ideas into production-ready solutions.
 
-          <p className="text-lg leading-relaxed mb-6 text-gray-700">
-            From modern web platforms and mobile applications to cloud-native
-            infrastructure and intelligent systems, we help organizations
-            transform ideas into production-ready solutions.
-          </p>
+        
 
-          <p className="text-lg leading-relaxed text-gray-700">
-            At Monolith, we don’t chase trends — we build strong foundations.
-            Foundations that enable businesses to scale with confidence, adapt
-            to change, and deliver meaningful impact.
+          
+          At Monolith, we are not following the trends, we are establishing solid grounds. Bases that help businesses to grow bigger with confidence, change, and make a significant impact.
           </p>
 
         </div>

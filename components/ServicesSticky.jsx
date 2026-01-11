@@ -17,56 +17,56 @@ const SERVICES = [
   {
     title: "Web Development",
     content:
-      "We build fast, scalable web applications designed for long-term growth. Our work focuses on clean architecture, performance, and maintainability, ensuring long-term reliability.",
+      "Supercharged web applications that are fast, secure and capable of scaling over time. The design is based on clean architecture and modern, AI-driven development practices so that it would perform strongly, be maintainable, and reliable. The systems are meant to cope with the demands of the real world, to perform efficiently when under load and to develop in the same manner as the features, traffic, and requirements become bigger as time progresses.",
     image: "/images/service-1.png",
     icon: Code2,
   },
   {
     title: "UI / UX Design",
     content:
-      "We design intuitive interfaces that balance aesthetics with usability and accessibility across all platforms.",
+      "Intuitive user interfaces that are platform-balanced to achieve visual clarity, usability, and accessibility. It is focused on regular design systems, concise interaction patterns and reactive layouts. Interfaces are designed to be simple to manipulate, inclusive, and flexible enough to provide a flexible experience across the gadgets, screen size, and changing user requirements in the long run.",
     image: "/images/service-2.png",
     icon: Palette,
   },
   {
     title: "Mobile App Development",
     content:
-      "High-performance mobile apps engineered for speed, responsiveness, and long-term scalability.",
+      "Mobile applications that are high-performance, fast, responsive, and long-term scalable. The focus of development is on safe foundations, effective use of resources, and the use of AI-assisted processes. Applications are built to behave in the same way on devices, stand stable across various conditions, and change without difficulties as features, platform, and usage change over time.",
     image: "/images/service-3.png",
     icon: Smartphone,
   },
   {
     title: "Cloud & DevOps",
     content:
-      "Secure, scalable cloud infrastructure supported by CI/CD pipelines and modern DevOps practices.",
+      "High availability, scalable cloud platform with CI/CD pipelines and the latest DevOps. It is focused on reliability, automation and performance optimization. Systems are developed to manage the dynamic workloads, provide high-security, and allow effortless deployments as infrastructure is maintained to be stable, efficient, and flexible as the environment, traffic, and needs of a system evolve over time.",
     image: "/images/service-4.png",
     icon: Cloud,
   },
   {
     title: "AI & Machine Learning",
     content:
-      "Practical AI systems delivering real business value through automation and data intelligence.",
+      "Real-value practical AI systems with automation and data intelligence. It is focused on reliability, transparency and measurable outcomes. The models and workflows are built to work harmoniously with the current systems and can be highly scalable and changing as the quality of the data used, its usage patterns, and operational needs change.",
     image: "/images/service-5.png",
     icon: Brain,
   },
   {
     title: "Cybersecurity",
     content:
-      "Security-first engineering protecting systems, users, and critical data at every layer.",
+      "Security-first engineering which defends systems, users, and data which are important across all layers. It pays focus to proactive risk reduction, secure architecture, and constant monitoring. The systems are also created to resist real-life attacks, preserve data integrity, and adjust to changing security issues and be dependable, compliant, and strong over time.",
     image: "/images/service-6.png",
     icon: Shield,
   },
   {
     title: "Product Engineering",
     content:
-      "End-to-end product ownership from concept to scalable production systems.",
+      "Complete ownership of end product, concept to scalable production systems. Emphasis is made on concrete requirements, considerate architecture and dependable delivery. Every phase is structured in a way that is consistent, high-quality, and long-lasting maintainable in order to enable products to move seamlessly between initial concepts and stable and scalable systems that can confidently develop over time.",
     image: "/images/service-7.png",
     icon: Boxes,
   },
   {
     title: "SEO & Growth",
     content:
-      "Technical SEO and growth optimization built on strong performance foundations.",
+      "Growth optimization and technical SEO based on performance foundations. They are focused on site structure, speed and crawl efficiency. These systems are supposed to accommodate discoverability, sustain technical health and respond to the changing search algorithms without allowing performance to decline and long-term stability to be jeopardized with growth in content and traffic.",
     image: "/images/service-8.png",
     icon: TrendingUp,
   },
@@ -150,7 +150,7 @@ export default function ServicesSticky() {
         </div>
 
         {/* 🖥️ DESKTOP — STICKY IMAGE (UNCHANGED) */}
-        <div className="hidden lg:block sticky top-24 h-[820px] relative">
+        <div className="hidden lg:block sticky top-12 h-[820px] relative">
           {SERVICES.map((service, index) => (
             <div
               key={index}

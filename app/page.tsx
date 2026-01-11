@@ -56,11 +56,9 @@ export default function Home() {
 
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-semibold text-white mb-3">
-              Client Testimonials
+              What Our Clients Say
             </h2>
-            <p className="text-base text-gray-400 max-w-xl mx-auto">
-              Hear what our satisfied clients have to say about working with us.
-            </p>
+            
           </div>
 
           <TestimonialSlider />

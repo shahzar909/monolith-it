@@ -65,8 +65,8 @@ export default function Hero1({ onGetStarted }: Hero1Props) {
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg md:text-xl text-gray-300 leading-relaxed">
-          Monolith empowers developers to create, ship, and scale applications
-          using global infrastructure optimized for performance.
+         From concept to growth, we build what matters
+        
         </p>
 
         {/* Buttons */}

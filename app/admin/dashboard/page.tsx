@@ -1,5 +1,6 @@
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import connectDB from "@/lib/mongodb";
@@ -26,82 +27,75 @@ export default async function AdminDashboardPage() {
   return (
     <div className="min-h-screen bg-black text-white px-10 pt-32 pb-24">
 
-    {/* ================= HEADER ================= */}
-<div className="mb-16 flex items-center justify-between">
-  <div>
-    <h1 className="text-4xl font-light tracking-tight">
-      Admin Dashboard
-    </h1>
-    <p className="text-gray-400 mt-2">
-      Manage leads and contact form submissions
-    </p>
-  </div>
+      {/* ================= HEADER ================= */}
+      <div className="mb-16 flex items-center justify-between">
+        <div>
+          <h1 className="text-4xl font-light tracking-tight">
+            Admin Dashboard
+          </h1>
+          <p className="text-gray-400 mt-2">
+            Manage leads and contact form submissions
+          </p>
+        </div>
 
-  <form action="/api/admin/logout" method="POST">
-  <button
-  onClick={() => {
-    window.location.href = "/api/admin/logout";
-  }}
-  className="text-sm text-red-400 hover:text-red-300"
->
-  Logout
-</button>
-
-  </form>
-</div>
-
+        {/* ✅ SERVER-SAFE LOGOUT */}
+        <form action="/api/admin/logout" method="POST">
+          <button
+            type="submit"
+            className="text-sm text-red-400 hover:text-red-300"
+          >
+            Logout
+          </button>
+        </form>
+      </div>
 
       {/* ================= LEADS SECTION ================= */}
-<section className="mb-24">
-  <h2 className="text-2xl font-light mb-6">
-    Leads
-  </h2>
+      <section className="mb-24">
+        <h2 className="text-2xl font-light mb-6">
+          Leads
+        </h2>
 
-  {leads.length === 0 ? (
-    <p className="text-gray-400">No leads yet.</p>
-  ) : (
-    <div className="overflow-x-auto rounded-xl border border-white/10">
-      <table className="w-full text-sm">
-        <thead className="bg-white/5 text-gray-300">
-          <tr>
-            <th className="p-4 text-left">Name</th>
-            <th className="p-4 text-left">Email</th>
-            <th className="p-4 text-left">Phone</th>
-            <th className="p-4 text-left">Date</th>
-          </tr>
-        </thead>
+        {leads.length === 0 ? (
+          <p className="text-gray-400">No leads yet.</p>
+        ) : (
+          <div className="overflow-x-auto rounded-xl border border-white/10">
+            <table className="w-full text-sm">
+              <thead className="bg-white/5 text-gray-300">
+                <tr>
+                  <th className="p-4 text-left">Name</th>
+                  <th className="p-4 text-left">Email</th>
+                  <th className="p-4 text-left">Phone</th>
+                  <th className="p-4 text-left">Date</th>
+                </tr>
+              </thead>
 
-        <tbody>
-          {leads.map((lead: any) => (
-            <tr
-              key={lead._id}
-              className="border-t border-white/10 hover:bg-white/5 transition"
-            >
-              <td className="p-4 font-medium">
-                {lead.name}
-              </td>
-
-              <td className="p-4 text-gray-300">
-                {lead.email}
-              </td>
-
-              <td className="p-4 text-gray-300">
-                {lead.phone || "-"}
-              </td>
-
-              <td className="p-4 text-xs text-gray-400 whitespace-nowrap">
-                {lead.createdAt
-                  ? new Date(lead.createdAt).toLocaleString()
-                  : "-"}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  )}
-</section>
-
+              <tbody>
+                {leads.map((lead: any) => (
+                  <tr
+                    key={lead._id}
+                    className="border-t border-white/10 hover:bg-white/5 transition"
+                  >
+                    <td className="p-4 font-medium">
+                      {lead.name}
+                    </td>
+                    <td className="p-4 text-gray-300">
+                      {lead.email}
+                    </td>
+                    <td className="p-4 text-gray-300">
+                      {lead.phone || "-"}
+                    </td>
+                    <td className="p-4 text-xs text-gray-400 whitespace-nowrap">
+                      {lead.createdAt
+                        ? new Date(lead.createdAt).toLocaleString()
+                        : "-"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
 
       {/* ================= CONTACT SECTION ================= */}
       <section>

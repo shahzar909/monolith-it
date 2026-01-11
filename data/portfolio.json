@@ -3,42 +3,42 @@
     "id": 1,
     "title": "Financial Services Platform",
     "category": "FinTech",
-    "description": "Developed a comprehensive digital banking platform with real-time transactions, fraud detection, and mobile-first UX.",
+    "description": "Designed a full digital banking experience that offers real-time banking, fraud detection, and mobile-first user experience.",
     "image": "/images/portfolio/project-1.png"
   },
   {
     "id": 2,
     "title": "Healthcare Management System",
     "category": "Healthcare",
-    "description": "Built an integrated hospital management system with EHR, appointment scheduling, and telemedicine features.",
+    "description": "Constructed a system of integrated hospital management EHR, appointment scheduling and telemedicine features.",
     "image": "/images/portfolio/project-2.png"
   },
   {
     "id": 3,
     "title": "Retail Marketplace Platform",
     "category": "Retail",
-    "description": "Created a scalable multi-vendor marketplace handling 100K+ daily transactions with analytics and AI recommendations.",
+    "description": "Developed scalable multi-vendor marketplace with analytics and AI recommendation managing 10K+ daily transactions.",
     "image": "/images/portfolio/project-3.png"
   },
   {
     "id": 4,
     "title": "Logistics & Supply Chain System",
     "category": "Logistics",
-    "description": "Implemented an automated logistics platform with real-time tracking and route optimization.",
+    "description": "Installed a logistics platform that is automated and tracks its positions and routes in real time.",
     "image": "/images/portfolio/project-4.png"
   },
   {
     "id": 5,
     "title": "AI Analytics Dashboard",
     "category": "AI / ML",
-    "description": "Designed an AI-powered analytics dashboard for business intelligence and predictive insights.",
+    "description": "Developed a business intelligence and predictive insights analytics dashboard using AI.",
     "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80&auto=format"
   },
   {
     "id": 999,
     "title": "AI Agent Platform",
     "category": "Artificial Intelligence",
-    "description": "An autonomous AI agent system capable of reasoning, tool usage, and multi-step task execution for real-world workflows.",
+    "description": "A self-directed AI agent system with the ability to reason, use of tools and can perform multiple steps to work in the real world.",
     "image": "/images/portfolio/project-6.png"
   }
   

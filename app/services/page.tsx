@@ -72,13 +72,11 @@ export default function ServicesPage() {
 
           {/* PAGE HEADER */}
           <div className="mb-16">
-            <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4">
-              We strive to deliver excellence
+            
+         
+            <h1  className="text-5xl md:text-7xl font-light leading-tight" >
+            What We Do
             </h1>
-            <p className="text-lg text-gray-400 max-w-2xl">
-              Discover our expertise across engineering, design, and digital
-              transformation — built to help businesses scale with confidence.
-            </p>
           </div>
 
           {/* SERVICES GRID */}
