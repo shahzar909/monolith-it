@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import {  Linkedin, Mail, Phone, } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -15,9 +15,17 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
              
-              <a href="#" className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
+              <a href="https://www.linkedin.com/company/monolith-it-systems/" className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition-colors">
                 <Linkedin size={18} />
               </a>
+              <a
+  href="mailto:monolithit1@gmail.com"
+  aria-label="Email Monolith IT"
+  className="w-10 h-10 bg-dark-800 rounded-full flex items-center justify-center
+             hover:bg-primary-600 transition-colors"
+>
+  <Mail size={18} />
+</a>
               
             </div>
           </div>
@@ -46,10 +54,6 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6">Contact Info</h3>
             <ul className="space-y-4">
-              <li className="flex items-start">
-                <MapPin className="text-primary-400 mr-3 mt-1 flex-shrink-0" size={20} />
-                <span className="text-dark-300">Okhla, South East Delhi<br />New Delhi, 110025</span>
-              </li>
               <li className="flex items-center">
                 <Phone className="text-primary-400 mr-3 flex-shrink-0" size={20} />
                 <span className="text-dark-300">+91 7301190333</span>
@@ -60,7 +64,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="text-primary-400 mr-3 flex-shrink-0" size={20} />
-                <span className="text-dark-300">shahzarkhan909@gmail.com</span>
+                <span className="text-dark-300">monolithit1@gmail.com</span>
               </li>
             </ul>
           </div>
